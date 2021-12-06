@@ -1,0 +1,28 @@
+scoorder_0 = "Ruud Gullit"
+scoorder_1 = "Marco van Basten"
+goal_0 = 32
+goal_1 = 54
+scorers = scoorder_0 + ' ' + str(goal_0) + ', ' + scoorder_1 + ' ' + str(goal_1)
+print(scorers)
+print(type(scorers))
+
+report = f'''{scoorder_0} scored in the {goal_0}nd minute\n{scoorder_1} scored in the {goal_1}th minute'''
+print(report)
+
+player = 'Marco van Basten'
+first_name = player[0:player.find(' ')]
+print(first_name)
+x = len(player)
+
+last_name = player[player.find(' ')+1:(len(player)+1)]
+last_name_len = len(last_name)
+print(last_name_len)
+
+name_short = first_name[:1] + '.' + ' ' + last_name
+print(name_short)
+
+chant = (len(first_name)* (first_name + '!' + ' ')).rstrip(' ')
+print(chant)
+
+good_chant = len(chant) != ' '
+print(good_chant)
